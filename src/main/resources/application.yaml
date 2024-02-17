@@ -1,0 +1,17 @@
+
+
+handy:
+  cron: 0 */2 * ? * *
+  token: 10ntgs5nknlcbjf58n6pl3ppnfc6c9e0
+  order:
+    url: https://hub.handy.la/api/v2/salesOrder
+
+spring:
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate.ddl-auto: update
+  datasource:
+    url: jdbc:sqlite:handy.db
+    driver-class-name: org.sqlite.JDBC
+    username: admin
+    password: admin
